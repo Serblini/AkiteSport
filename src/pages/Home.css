@@ -1,0 +1,30 @@
+/* Home.css */
+.custom-carousel {
+    margin-bottom: 5px;
+  }
+  
+  .carousel .slide .carousel-image {
+    max-height: 400px;
+    object-fit: contain;
+  }
+  
+  .product-image {
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .legend {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    bottom: 5px !important;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  

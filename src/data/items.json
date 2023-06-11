@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Мяч Баскетбольный",
+    "price": 699,
+    "description": "Прекрасный баскетбольный мяч",
+    "imgUrl": "/imgs/basketball.jpg"
+    
+  },
+  {
+    "id": 2,
+    "name": "Мяч футбольный",
+    "price": 499,
+    "description": "Прекрасный футбольный мяч",
+    "imgUrl": "/imgs/football.jpg"
+    },
+    {
+    "id": 3,
+    "name": "Теннисная ракетка",
+    "price": 899,
+    "description": "Идеальная теннисная ракетка для любителей",
+    "imgUrl": "/imgs/tennis.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Гантели",
+      "price": 1199,
+      "description": "Набор гантелей разного веса для фитнеса и тренировок",
+      "imgUrl": "/imgs/dumbbells.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Бадминтонный комплект",
+        "price": 899,
+        "description": "Комплект для игры в бадминтон с ракетками и воланами",
+        "imgUrl": "/imgs/badminton.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Скакалка",
+          "price": 499,
+          "description": "Прочная скакалка для кардиотренировок и укрепления мышц",
+          "imgUrl": "/imgs/jump-rope.jpg"
+          },
+          {
+            "id": 7,
+            "name": "Тренажерный мяч",
+            "price": 249,
+            "description": "Мяч для тренировок силы и баланса",
+            "imgUrl": "/imgs/exercise-ball.jpg"
+          },
+          {
+            "id": 8,
+            "name": "Мяч Баскетбольный",
+            "price": 699,
+            "description": "Прекрасный баскетбольный мяч",
+            "imgUrl": "/imgs/basketball1.jpg"
+            
+          },
+          {
+            "id": 8,
+            "name": "Мяч футбольный",
+            "price": 499,
+            "description": "Прекрасный футбольный мяч",
+            "imgUrl": "/imgs/football1.jpg"
+            }
+]
