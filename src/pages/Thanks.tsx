@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 export function Thanks() {
   return (
     <Container>
-      <h1>404</h1>
+      <h1>403</h1>
       <h2>
        Если вы видите эту страницу во время оформления заказа, значит транзакции недоступны в вашем регионе или с вашим IP адресом.
        </h2>
