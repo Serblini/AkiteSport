@@ -1,7 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Nav,Container, Row, Col, Card, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import storeItems from "../data/items.json";
 import { formatCurrency } from "../utilities/formatCurrency";
 import "./Home.css";
@@ -30,9 +30,9 @@ export function Home() {
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>{item.description}</Card.Text>
                 <Card.Text>{formatCurrency(item.price)}</Card.Text>
-                <Button as={Link} to={`/store/${item.id}`} variant="primary">
+                <Nav.Link to={`/store/${item.id}`} as={NavLink}><Button variant="primary">
                   Подробнее
-                </Button>
+                </Button></Nav.Link>
               </Card.Body>
             </Card>
           </Col>
