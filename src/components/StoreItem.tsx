@@ -1,4 +1,5 @@
 import { Button, Card } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
 
@@ -27,7 +28,9 @@ export function StoreItem({ id, name, price, imgUrl, description }: StoreItemPro
         height="200px"
         style={{ objectFit: "contain" }}
       />
+      
       <Card.Body className="d-flex flex-column">
+      <Link style={{textDecoration: "none", color:"black"}} to={`/store/${id}`}>
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2">{name}</span>
           
@@ -40,7 +43,9 @@ export function StoreItem({ id, name, price, imgUrl, description }: StoreItemPro
         <div className="mt-auto">
         {description}{" "}
         <br/>
-          {quantity === 0 ? (
+        </div>
+        </Link>
+        <div>          {quantity === 0 ? (
             <Button variant="warning" className="w-100" onClick={() => increaseCartQuantity(id)}>
               + В корзину
             </Button>

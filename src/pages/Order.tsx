@@ -25,9 +25,9 @@ export function Order() {
       )}`;
     });
 
-    alert(`Выбранные товары:\n${orderSummary.join("\n")}\nСумма заказа: ${formatCurrency(
-      totalPrice
-    )}`);
+    // alert(`Выбранные товары:\n${orderSummary.join("\n")}\nСумма заказа: ${formatCurrency(
+    //   totalPrice
+    // )}`);
   };
 
   return (
@@ -39,7 +39,7 @@ export function Order() {
       <div className="fw-bold fs-5">
       Сумма заказа: {formatCurrency(totalPrice)}
       </div>
-      <Nav.Link to="/thanks" as={NavLink}><Button onClick={handlePlaceOrder} variant="warning" >Оставить заказ</Button></Nav.Link>
+      <Nav.Link to="/checkout" as={NavLink}><Button onClick={handlePlaceOrder} variant="warning" >Заполнить данные заказа</Button></Nav.Link>
     </Container>
   );
 }

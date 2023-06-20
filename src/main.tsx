@@ -1,13 +1,24 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import App from "./App"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { BrowserRouter } from "react-router-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import { Provider } from "mobx-react";
+import { authStore } from "./utilities/storeOb";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Provider authStore={authStore}>
+        <AuthProvider>
+          <ShoppingCartProvider>
+            <App />
+          </ShoppingCartProvider>
+        </AuthProvider>
+      </Provider>
     </BrowserRouter>
-  </React.StrictMode>
-)
+  </React.StrictMode>,
+  document.getElementById("root")
+);
