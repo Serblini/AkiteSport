@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
 
-type StoreItemProps = {
+export type StoreItemProps = {
   id: number
   name: string
   price: number
